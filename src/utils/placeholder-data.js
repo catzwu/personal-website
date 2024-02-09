@@ -43,22 +43,10 @@ const projects = [
     year: 2023,
     importance: 5,
   },
-];
-
-const pages = [
   {
-    title: "Puzzles",
-  },
-  {
-    title: "Resume",
-  },
-  {
-    title: "Web development",
-  },
-  {
-    title: "Economics",
-  },
-  {
-    title: "About me",
+    name: "brain",
+    tags: ["website", "design", "product", "art"],
+    year: 2024,
+    importance: 3,
   },
 ];
