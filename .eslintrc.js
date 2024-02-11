@@ -30,5 +30,5 @@ module.exports = {
     "react/jsx-uses-react": "off",
     "react/prop-types": "off",
   },
-  ignorePatterns: ["*.config.js", "*.css"],
+  ignorePatterns: ["*.config.js"],
 };
