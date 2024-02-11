@@ -8,5 +8,5 @@ const config = {
     tailwindFunctions: ['clsx', 'tw'],
   };
   
-  export default config;
+  module.exports = config;
 
