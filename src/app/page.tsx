@@ -43,20 +43,20 @@ export default function Home() {
                     <h3 className="text-3xl font-light leading-loose text-main-400 lg:text-4xl">
                         I am a{' '}
                     </h3>{' '}
-                    <div className="flex h-72 flex-col justify-start overflow-clip">
+                    <div className="flex h-72 flex-col justify-center overflow-clip">
                         <h3
                             className={clsx(
                                 {
-                                    '-top-14 font-medium text-white':
+                                    'top-14 font-medium text-white':
                                         selectedPage === 'c',
-                                    'top-14 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    'top-0 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 's',
-                                    'top-0 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    'from-main-600 -top-14 bg-gradient-to-t bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'h',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
+                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
                             )}
                             onClick={() => {
                                 setPage('c')
@@ -67,96 +67,36 @@ export default function Home() {
                         <h3
                             className={clsx(
                                 {
-                                    'top-14 font-medium text-white':
+                                    'top-0 font-medium text-white':
                                         selectedPage === 's',
-                                    'top-0 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    '-top-14 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'h',
-                                    '-top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    'top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'c',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
+                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
                             )}
                             onClick={() => {
                                 setPage('s')
                             }}
                         >
                             perpetual student
-                        </h3>
-                        <h3
-                            className={clsx(
-                                {
-                                    'top-0 font-medium text-white':
-                                        selectedPage === 'h',
-                                    '-top-14 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 'c',
-                                    'top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 's',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
-                                        !selectedPage,
-                                },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
-                            )}
-                            onClick={() => {
-                                setPage('h')
-                            }}
-                        >
-                            human
                         </h3>
                         <h3
                             className={clsx(
                                 {
                                     '-top-14 font-medium text-white':
+                                        selectedPage === 'h',
+                                    'from-main-600 top-14 bg-gradient-to-b bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'c',
-                                    'top-14 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 's',
                                     'top-0 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 'h',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
-                                        !selectedPage,
-                                },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
-                            )}
-                            onClick={() => {
-                                setPage('c')
-                            }}
-                        >
-                            creator of experiences
-                        </h3>
-                        <h3
-                            className={clsx(
-                                {
-                                    'top-14 font-medium text-white':
                                         selectedPage === 's',
-                                    'top-0 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 'h',
-                                    '-top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 'c',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
-                            )}
-                            onClick={() => {
-                                setPage('s')
-                            }}
-                        >
-                            perpetual student
-                        </h3>
-                        <h3
-                            className={clsx(
-                                {
-                                    'top-0 font-medium text-white':
-                                        selectedPage === 'h',
-                                    '-top-14 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 'c',
-                                    'top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
-                                        selectedPage === 's',
-                                    'font-regular text-main-400 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
-                                        !selectedPage,
-                                },
-                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-700 ease-linear lg:text-4xl'
+                                'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
                             )}
                             onClick={() => {
                                 setPage('h')
