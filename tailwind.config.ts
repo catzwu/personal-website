@@ -17,7 +17,18 @@ const config: Config = {
         'main-600': '#37523D',
         'main-400': '#879A8D',
         'main-800': '#053619',
-        'main-200': '#B7C2BB'
+        'main-200': '#B7C2BB',
+        'secondary-200': '#AEFDBF',
+        'secondary-400': '#8CE19F',
+      },
+      keyframes: {
+        'mount-component': {
+          '0%': { opacity:'0' },
+          '100%': { opacity:'1' },
+        }
+      },
+      animation: {
+        'mount-component': 'mount-component 0.3s ease-in-out'
       }
     },
   },

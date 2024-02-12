@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import Brain from './brain'
+import Brain from './brain/page'
 import clsx from 'clsx'
+import About from './about'
 
 type PageType = 's' | 'c' | 'h' | ''
 
@@ -17,14 +18,14 @@ export default function Home() {
             case 'c':
                 return <p>cr</p>
             case 'h':
-                return <p>hu</p>
+                return <About />
             default:
                 return
         }
     }
 
     return (
-        <main className="flex h-dvh flex-row space-x-4 px-8 md:px-24 lg:px-48">
+        <main className="flex h-dvh flex-row items-center space-x-4 px-8 md:px-24 lg:px-48">
             <div
                 className={clsx(
                     {
@@ -34,7 +35,7 @@ export default function Home() {
                     'flex flex-col items-start justify-center space-y-8 transition-all duration-700 ease-out'
                 )}
             >
-                <h1 className="tracking-none mb-4 cursor-pointer text-4xl font-bold leading-loose md:text-5xl lg:text-6xl">
+                <h1 className="tracking-none text-secondary-200 mb-4 cursor-pointer text-4xl font-bold leading-loose md:text-5xl lg:text-6xl">
                     <span onClick={() => setPage('')}>
                         Hi, I&apos;m Catherine
                     </span>
@@ -109,7 +110,9 @@ export default function Home() {
             </div>
 
             {selectedPage && (
-                <div className="w-1/2">{switchPage(selectedPage)}</div>
+                <div className="flex h-2/3 w-1/2 flex-col items-start justify-start space-y-4">
+                    {switchPage(selectedPage)}
+                </div>
             )}
         </main>
     )
