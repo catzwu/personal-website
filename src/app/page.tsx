@@ -1,8 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import Brain from './brain/page'
 import clsx from 'clsx'
+import { useState } from 'react'
 import About from './about'
 
 type PageType = 's' | 'c' | 'h' | ''
@@ -35,14 +34,14 @@ export default function Home() {
                     'flex flex-col items-start justify-center space-y-8 transition-all duration-700 ease-out'
                 )}
             >
-                <h1 className="tracking-none text-secondary-200 mb-4 cursor-pointer text-4xl font-bold leading-loose md:text-5xl lg:text-6xl">
+                <h1 className="tracking-none mb-4 cursor-pointer text-4xl font-bold leading-loose text-secondary-200 md:text-5xl lg:text-6xl">
                     <span onClick={() => setPage('')}>
                         Hi, I&apos;m Catherine
                     </span>
                 </h1>
                 <div className="flex items-center space-x-2">
-                    <h3 className="text-3xl font-light leading-loose text-main-400 lg:text-4xl">
-                        I am a{' '}
+                    <h3 className="mr-1 text-3xl font-extralight leading-loose text-main-400 lg:text-4xl">
+                        I am a{!selectedPage ? '...' : ' '}
                     </h3>{' '}
                     <div className="flex h-72 flex-col justify-center overflow-clip">
                         <h3
@@ -52,9 +51,9 @@ export default function Home() {
                                         selectedPage === 'c',
                                     'top-0 bg-gradient-to-t from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 's',
-                                    'from-main-600 -top-14 bg-gradient-to-t bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    '-top-14 bg-gradient-to-t from-main-600 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'h',
-                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular top-14 ml-8 text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
                                 'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
@@ -74,7 +73,7 @@ export default function Home() {
                                         selectedPage === 'h',
                                     'top-14 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'c',
-                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular top-14 ml-8 text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
                                 'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
@@ -90,11 +89,11 @@ export default function Home() {
                                 {
                                     '-top-14 font-medium text-white':
                                         selectedPage === 'h',
-                                    'from-main-600 top-14 bg-gradient-to-b bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
+                                    'top-14 bg-gradient-to-b from-main-600 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 'c',
                                     'top-0 bg-gradient-to-b from-main-400 bg-clip-text font-medium text-transparent hover:text-main-200 hover:drop-shadow-xl':
                                         selectedPage === 's',
-                                    'font-regular text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
+                                    'font-regular top-14 ml-8 text-main-400 duration-200 hover:font-medium hover:text-main-200 hover:drop-shadow-xl':
                                         !selectedPage,
                                 },
                                 'relative cursor-pointer py-2 text-3xl leading-loose transition-all duration-500 ease-linear lg:text-4xl'
