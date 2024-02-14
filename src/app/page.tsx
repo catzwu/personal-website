@@ -3,19 +3,19 @@
 import clsx from 'clsx'
 import { useState } from 'react'
 import About from './about'
+import Work from './work'
 
 type PageType = 's' | 'c' | 'h' | ''
 
 export default function Home() {
     const [selectedPage, setPage] = useState<PageType>('')
-    const [scrollOffset, setScroll] = useState<number>(0)
 
     const switchPage = (selectedPage: PageType) => {
         switch (selectedPage) {
             case 's':
                 return <p>st</p>
             case 'c':
-                return <p>cr</p>
+                return <Work />
             case 'h':
                 return <About />
             default:
