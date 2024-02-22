@@ -10,15 +10,30 @@ const Work = () => {
                 I like to build things that make people's lives richer. I am
                 obsessed with obsession, delight and agency.{' '}
             </p>
-            <h3 className="py-2 text-3xl font-medium leading-loose text-white lg:text-4xl">
-                Selected work
-            </h3>
-            <Project
-                name="Mystery Hunt 2023"
-                roles="Director, Puzzle Writer"
-                image="face.JPG"
-                description="Description goes here"
-            />
+
+            <div className="space-y-8 py-16">
+                <h3 className="font-regular py-2 text-3xl leading-loose text-white lg:text-4xl">
+                    Selected work
+                </h3>
+                <Project
+                    name="Mystery Hunt 2023"
+                    roles="Director, Puzzle Writer"
+                    image="face.JPG"
+                    description="Description goes here"
+                />
+                <Project
+                    name="Shopify Data Platform"
+                    roles="Product Manager"
+                    image="face.JPG"
+                    description="Led data discovery and accuracy for a team"
+                />
+                <Project
+                    name="SPARC"
+                    roles="Instructor, Admissions Committee"
+                    image="face.JPG"
+                    description="A camp that does stuff for high school students but this needs to be two lines this time."
+                />
+            </div>
         </div>
     )
 }

@@ -109,7 +109,7 @@ export default function Home() {
             </div>
 
             {selectedPage && (
-                <div className="flex h-2/3 w-1/2 flex-col items-start justify-start space-y-4">
+                <div className="my-auto flex max-h-full w-1/2 flex-col items-start justify-start space-y-4 overflow-auto py-16">
                     {switchPage(selectedPage)}
                 </div>
             )}
