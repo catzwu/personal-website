@@ -26,16 +26,17 @@ const About = () => {
                     data-informed decisions.
                 </p>
                 <p>
-                    My interests have taken me all over the map, and I’m leaning
-                    into chances to learn and try new things constantly. My
-                    hobbies currently include puzzle hunts, climbing and
+                    My interests have taken me all over the map, and I&apos;m
+                    leaning into chances to learn and try new things constantly.
+                    My hobbies currently include puzzle hunts, climbing and
                     Classical Chinese.
                 </p>
             </div>
 
-            <div className="text-secondary-200 flex flex-row space-x-14 pt-4 font-light">
+            <div className="flex flex-row space-x-14 pt-4 font-light text-secondary-200">
                 <span>Resume</span>
                 <span>Contact</span>
+                <Link href="https://www.admonymous.co/catzwu">Feedback</Link>
                 <Link href="/brain">???</Link>
             </div>
         </div>
