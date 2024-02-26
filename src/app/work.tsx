@@ -11,26 +11,26 @@ const Work = () => {
                 obsessed with obsession, delight and agency.{' '}
             </p>
 
-            <div className="space-y-8 py-16">
+            <div className="space-y-8">
                 <h3 className="font-regular py-2 text-3xl leading-loose text-white lg:text-4xl">
                     Selected work
                 </h3>
                 <Project
                     name="Mystery Hunt 2023"
                     roles="Director, Puzzle Writer"
-                    image="face.JPG"
-                    description="Description goes here"
+                    image="mate-line.svg"
+                    description="Description goes here la"
                 />
                 <Project
                     name="Shopify Data Platform"
                     roles="Product Manager"
-                    image="face.JPG"
+                    image="shopify.svg"
                     description="Led data discovery and accuracy for a team"
                 />
                 <Project
                     name="SPARC"
                     roles="Instructor, Admissions Committee"
-                    image="face.JPG"
+                    image="sparc2.svg"
                     description="A camp that does stuff for high school students but this needs to be two lines this time."
                 />
             </div>
