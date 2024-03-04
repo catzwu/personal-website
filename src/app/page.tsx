@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { useState } from 'react'
 import About from './about'
 import Work from './work'
+import Study from './study'
 
 type PageType = 's' | 'c' | 'h' | ''
 
@@ -13,7 +14,7 @@ export default function Home() {
     const switchPage = (selectedPage: PageType) => {
         switch (selectedPage) {
             case 's':
-                return <p>st</p>
+                return <Study />
             case 'c':
                 return <Work />
             case 'h':

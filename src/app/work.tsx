@@ -4,11 +4,11 @@ const Work = () => {
     return (
         <div className="animate-mount-component space-y-4">
             <h1 className="mb-8 text-4xl font-bold leading-loose md:text-5xl lg:text-6xl">
-                What I've done
+                What I&apos;ve done
             </h1>
             <p>
-                I like to build things that make people's lives richer. I am
-                obsessed with obsession, delight and agency.{' '}
+                I like to build things that make people&apos;s lives richer. I
+                am obsessed with obsession, delight and agency.{' '}
             </p>
 
             <div className="space-y-8">
