@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+
+const email = 'catw2188@gmail.com'
 
 const About = () => {
     return (
@@ -33,9 +36,20 @@ const About = () => {
                 </p>
             </div>
 
-            <div className="flex flex-row space-x-14 pt-4 font-light text-secondary-200">
-                <span>Resume</span>
-                <span>Contact</span>
+            <div className="flex flex-row space-x-14 pt-4 font-light text-secondary-200 *:transition-colors hover:*:text-secondary-400">
+                <Link
+                    href="./cwu_resume_0124.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Resume
+                </Link>
+                <CopyToClipboard text={email}>
+                    <span className="cursor-pointer" id="contact">
+                        Contact
+                    </span>
+                </CopyToClipboard>
+
                 <Link href="https://www.admonymous.co/catzwu">Feedback</Link>
                 <Link href="/brain">???</Link>
             </div>
