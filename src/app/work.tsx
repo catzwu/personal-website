@@ -18,7 +18,7 @@ const Work = () => {
                 <Project
                     name="Mystery Hunt 2023"
                     roles="Director, Puzzle Writer"
-                    image="mate-line.svg"
+                    image="mate.svg"
                     description="Description goes here la"
                 />
                 <Project
