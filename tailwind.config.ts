@@ -18,6 +18,7 @@ const config: Config = {
         'main-400': '#879A8D',
         'main-800': '#053619',
         'main-200': '#B7C2BB',
+        'secondary-50': '#0C3E20',
         'secondary-200': '#AEFDBF',
         'secondary-400': '#8CE19F',
       },
