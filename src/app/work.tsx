@@ -11,7 +11,7 @@ const Work = () => {
                 am obsessed with obsession, delight and agency.{' '}
             </p>
 
-            <div className="space-y-8">
+            <div className="mb-8 space-y-8">
                 <h3 className="font-regular py-2 text-3xl leading-loose text-white lg:text-4xl">
                     Selected work
                 </h3>

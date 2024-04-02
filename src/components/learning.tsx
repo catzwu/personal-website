@@ -23,11 +23,11 @@ const Learning: FC<PropsWithChildren<LearningProps>> = ({
             </h3>
             <div
                 className={clsx(
-                    { 'h-[0]': !isOpen, 'h-32': isOpen },
-                    'flex items-center overflow-auto transition-[height] duration-500'
+                    { 'h-[0]': !isOpen, 'h-36': isOpen },
+                    'flex overflow-auto transition-[height] duration-500'
                 )}
             >
-                {children}
+                <div className="my-auto">{children}</div>
             </div>
         </div>
     )

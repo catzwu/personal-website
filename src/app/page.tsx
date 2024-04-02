@@ -25,14 +25,14 @@ export default function Home() {
     }
 
     return (
-        <main className="flex h-dvh flex-row items-center space-x-4 overflow-auto">
+        <main className="flex h-dvh flex-row items-center space-x-4 overflow-auto ">
             <div
                 className={clsx(
                     {
-                        'w-1/2 pl-8 md:pl-24 lg:pl-48': selectedPage,
-                        'w-full px-24 md:px-48 lg:px-64 ': !selectedPage,
+                        'ml-auto  w-1/2 pl-8': selectedPage,
+                        'w-full  px-24 md:px-48 lg:px-64': !selectedPage,
                     },
-                    'sticky top-1/3 flex flex-col items-start justify-center space-y-8 transition-all duration-700 ease-out'
+                    'sticky top-1/3 flex flex-col items-center justify-center space-y-8 transition-all duration-700 ease-out'
                 )}
             >
                 <h1 className="tracking-none mb-4 cursor-pointer text-4xl font-bold leading-loose text-secondary-200 md:text-5xl lg:text-6xl">
@@ -110,8 +110,10 @@ export default function Home() {
             </div>
 
             {selectedPage && (
-                <div className="my-auto flex max-h-full w-1/2 flex-col items-start justify-start space-y-4 py-12 pr-8 md:py-24 md:pr-24 lg:py-32 lg:pr-48">
-                    {switchPage(selectedPage)}
+                <div className=" my-auto flex w-1/2 flex-col items-start justify-start space-y-4 py-16 pr-6">
+                    <div className="flex max-w-xl flex-col">
+                        {switchPage(selectedPage)}
+                    </div>
                 </div>
             )}
         </main>
