@@ -20,7 +20,7 @@ const Project: FC<ProjectProps> = ({ name, roles, image, description }) => {
                 <p className="mb-2 ">{description}</p>
             </div>
 
-            <img src={image} className="h-32" />
+            <img src={image} className="h-16 md:h-24 lg:h-32" />
         </div>
     )
 }
