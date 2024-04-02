@@ -1,4 +1,5 @@
-import Project from '@/components/project'
+import Project, { ProjectProps } from '@/components/project'
+import { workStuff } from './content'
 
 const Work = () => {
     return (
@@ -15,24 +16,15 @@ const Work = () => {
                 <h3 className="font-regular py-2 text-3xl leading-loose text-white lg:text-4xl">
                     Selected work
                 </h3>
-                <Project
-                    name="Mystery Hunt 2023"
-                    roles="Director, Puzzle Writer"
-                    image="mate.svg"
-                    description="Description goes here la"
-                />
-                <Project
-                    name="Shopify Data Platform"
-                    roles="Product Manager"
-                    image="shopify.svg"
-                    description="Led data discovery and accuracy for a team"
-                />
-                <Project
-                    name="SPARC"
-                    roles="Instructor, Admissions Committee"
-                    image="sparc2.svg"
-                    description="A camp that does stuff for high school students but this needs to be two lines this time."
-                />
+                {workStuff.map(({ name, roles, image, description }) => (
+                    <Project
+                        name={name}
+                        key={name}
+                        roles={roles}
+                        image={image}
+                        description={description}
+                    />
+                ))}
             </div>
         </div>
     )

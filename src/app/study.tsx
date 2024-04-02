@@ -1,59 +1,6 @@
 import Learning from '@/components/learning'
 import { useState } from 'react'
-
-const learningStuff = [
-    { name: 'test', description: 'description' },
-    {
-        name: '2023 reading list',
-        description: (
-            <div className="list-disc">
-                Some of the books of the past year that have most influenced me:
-                <ul>
-                    <li>
-                        <i>The Licanius Trilogy</i>
-                    </li>
-                    <li>
-                        <i>Flatterland</i>
-                    </li>
-                    <li>
-                        <i>
-                            The Nine: Inside the Secret World of the Supreme
-                            Court
-                        </i>
-                    </li>
-                    <li>
-                        <i>The Price We Pay</i>
-                    </li>
-                </ul>
-            </div>
-        ),
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects 2',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work. I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work. I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-]
+import { learningStuff } from './content'
 
 const Study = () => {
     const [open, setOpen] = useState<string>('')

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-type ProjectProps = {
+export type ProjectProps = {
     name: string
     roles: string
     image: string
