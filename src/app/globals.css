@@ -24,3 +24,16 @@ body {
     text-wrap: balance;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--background-rgb);
+}
+
+* {
+  scrollbar-gutter: stable;
+  scrollbar-color: #B7C2BB rgb(var(--background-rgb));
+}
