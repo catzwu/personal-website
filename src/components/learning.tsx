@@ -1,26 +1,34 @@
+import clsx from 'clsx'
 import { FC, PropsWithChildren, useState } from 'react'
 
 type LearningProps = {
     name: string
-    icon: string
     isOpen: boolean
     onClick: () => void
 }
 
 const Learning: FC<PropsWithChildren<LearningProps>> = ({
     name,
-    icon,
     isOpen,
     onClick,
     children,
 }) => {
     return (
         <div
-            className="hover:bg-secondary-50 cursor-pointer rounded-md border border-secondary-200 p-4"
+            className="cursor-pointer flex-col rounded-md border border-secondary-200 p-4 transition-all duration-300 hover:bg-secondary-50"
             onClick={onClick}
         >
-            <p>{name}</p>
-            {isOpen && <div>{children}</div>}
+            <h3 className="mb-2 text-2xl font-light text-secondary-200 lg:text-3xl">
+                {name}
+            </h3>
+            <div
+                className={clsx(
+                    { 'h-[0]': !isOpen, 'h-32': isOpen },
+                    'flex items-center overflow-auto transition-[height] duration-500'
+                )}
+            >
+                {children}
+            </div>
         </div>
     )
 }
