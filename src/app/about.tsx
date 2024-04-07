@@ -67,7 +67,7 @@ const About = () => {
                 />
 
                 <Link href="https://www.admonymous.co/catzwu">Feedback</Link>
-                <Link href="/brain">???</Link>
+                <Link href="/brain">Brain</Link>
             </div>
         </div>
     )
