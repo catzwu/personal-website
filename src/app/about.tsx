@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { Tooltip } from 'react-tooltip'
+import { bio } from './content'
 
 const email = 'catw2188@gmail.com'
 
@@ -19,25 +20,7 @@ const About = () => {
                     className="float-right m-4 w-1/4 rounded-lg"
                     alt="It's me!"
                 />
-                <p>
-                    I&apos;m currently a graduate student in economics,
-                    designing systems that lead to the best outcome for
-                    everyone. The perfect mechanism can&apos;t solve everything,
-                    but I believe we can get a long way towards
-                    &lsquo;better&rsquo; by being intentional about structure
-                    and incentives.
-                </p>
-                <p>
-                    Previously, I worked as a product manager on Shopify&apos;s
-                    data team, building experiences to help people make
-                    data-informed decisions.
-                </p>
-                <p>
-                    My interests have taken me all over the map, and I&apos;m
-                    leaning into chances to learn and try new things constantly.
-                    My hobbies currently include puzzle hunts, climbing and
-                    Classical Chinese.
-                </p>
+                {bio}
             </div>
 
             <div className="flex flex-row space-x-14 pt-4 font-light text-secondary-200 *:transition-colors hover:*:text-secondary-400">

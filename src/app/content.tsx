@@ -75,3 +75,25 @@ export const learningStuff = [
             'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
     },
 ]
+
+export const bio = (
+    <>
+        <p>
+            I&apos;m currently a graduate student in economics, designing
+            systems that lead to the best outcome for everyone. The perfect
+            mechanism can&apos;t solve everything, but I believe we can get a
+            long way towards &lsquo;better&rsquo; by being intentional about
+            structure and incentives.
+        </p>
+        <p>
+            Previously, I worked as a product manager on Shopify&apos;s data
+            team, building experiences to help people make data-informed
+            decisions.
+        </p>
+        <p>
+            My interests have taken me all over the map, and I&apos;m leaning
+            into chances to learn and try new things constantly. My hobbies
+            currently include puzzle hunts, climbing and Classical Chinese.
+        </p>
+    </>
+)
