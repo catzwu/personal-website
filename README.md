@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Generating content
 
-The brain is pulled from my Obsidian directory, with people and dates deleted. I used obsidiantools.api to create a networkx graph from the vault, which was then exported to JSON and displayed with react-force-graph.
+The brain is pulled from my Obsidian directory, with people and dates deleted. I used obsidiantools.api to create a networkx graph from the vault, which was then exported to JSON and displayed with react-force-graph. (Note to self: ref vault_maker.py on desktop)
