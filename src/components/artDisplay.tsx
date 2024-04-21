@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 const art = require.context('../../public/art', true)
 const photos = require.context('../../public/photos', true)
 
@@ -8,7 +10,7 @@ const ArtDisplay = ({ folder }: { folder: string }) => {
     return (
         <div className="flex flex-wrap ">
             {imageList.map((image, index) => (
-                <img
+                <LazyLoadImage
                     key={index}
                     src={image.default.src}
                     alt={`image-${index}`}
