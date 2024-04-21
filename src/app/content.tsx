@@ -1,3 +1,4 @@
+import ArtDisplay from '@/components/artDisplay'
 import { ProjectProps } from '@/components/project'
 
 export const workStuff: ProjectProps[] = [
@@ -55,24 +56,12 @@ export const learningStuff = [
             'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
     },
     {
-        name: 'Tech projects 2',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work. I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work. I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
+        name: 'Pencil and digital drawing',
+        description: <ArtDisplay folder={'art'} />,
     },
     {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
+        name: 'Photography',
+        description: <ArtDisplay folder={'photo'} />,
     },
 ]
 
