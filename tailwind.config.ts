@@ -16,8 +16,9 @@ const config: Config = {
       colors: {
         'main-600': '#37523D',
         'main-400': '#879A8D',
-        'main-800': '#053619',
+        'main-800': '#224E33',
         'main-200': '#B7C2BB',
+        'main-900': '#02190C',
         'secondary-50': '#0C3E20',
         'secondary-200': '#AEFDBF',
         'secondary-400': '#8CE19F',
