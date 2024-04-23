@@ -63,6 +63,17 @@ export const learningStuff = [
         name: 'Photography',
         description: <ArtDisplay folder={'photo'} />,
     },
+    {
+        name: 'Quotes I strive to live by',
+        description: (
+            <ul>
+                <li>Seek to be wise over clever.</li>
+                <li>
+                    Take everyone around you seriously, and yourself not at all.
+                </li>
+            </ul>
+        ),
+    },
 ]
 
 export const bio = (
