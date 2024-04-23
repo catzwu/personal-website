@@ -17,7 +17,7 @@ export const workStuff: ProjectProps[] = [
     {
         name: 'SPARC',
         roles: 'Instructor, Admissions Committee',
-        image: 'sparc2.svg',
+        image: 'sparc.svg',
         description:
             'A camp that does stuff for high school students but this needs to be two lines this time.',
     },
