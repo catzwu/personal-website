@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* TODO: pick fonts */
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 19, 51, 32;

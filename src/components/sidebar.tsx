@@ -13,7 +13,7 @@ const Sidebar = ({
         <div
             className={clsx(
                 {
-                    '  max-w-full justify-center border-r border-main-800 px-4 pt-6 md:pt-16 lg:px-24 lg:pt-0':
+                    '  max-w-full justify-center px-4 pt-6 md:pt-16 lg:px-24 lg:pt-0':
                         selectedPage,
                     'w-full justify-center': !selectedPage,
                 },
@@ -31,7 +31,7 @@ const Sidebar = ({
                     'tracking-none  cursor-pointer font-bold leading-normal text-secondary-200'
                 )}
             >
-                <span onClick={() => setPage('')}>Hi, I&apos;m Catherine,</span>
+                <span onClick={() => setPage('')}>Catherine Wu</span>
             </p>
             <div
                 className={clsx(
@@ -50,6 +50,7 @@ const Sidebar = ({
                 >
                     I am a{!selectedPage ? '...' : ' '}
                 </h3>{' '} */}
+                {/* TODO: fix scrolling (just use js) */}
                 <div className="flex flex-col justify-center overflow-clip lg:h-72">
                     <h3
                         className={clsx(

@@ -22,6 +22,7 @@ const Learning: FC<PropsWithChildren<LearningProps>> = ({
                 {name}
             </h3>
             <div
+                // TODO: dynamic height to display more content
                 className={clsx(
                     { 'h-[0]': !isOpen, 'h-36': isOpen },
                     'flex overflow-auto transition-[height] duration-300'
