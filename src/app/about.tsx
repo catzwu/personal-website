@@ -14,16 +14,16 @@ const About = () => {
             <h1 className="mb-8 text-2xl font-bold leading-loose md:text-3xl lg:text-4xl">
                 Who I am
             </h1>
-            <div className="block space-y-4 font-light">
+            <div className=" block space-y-4 font-light">
                 <img
                     src="face.JPG"
-                    className="float-right m-4 w-1/4 rounded-lg"
+                    className="float-right m-4 hidden w-1/4 rounded-lg md:flex"
                     alt="It's me!"
                 />
                 {bio}
             </div>
 
-            <div className="flex flex-row space-x-14 pt-4 font-light text-secondary-200 *:transition-colors hover:*:text-secondary-400">
+            <div className="grid grid-cols-2 gap-4 py-4 font-light text-secondary-200 *:rounded-lg *:border *:border-secondary-200 *:p-2 *:transition-colors hover:*:text-secondary-400 md:flex md:flex-row md:flex-wrap md:space-x-14 *:md:border-0">
                 <Link
                     href="./cwu_resume_0124.pdf"
                     target="_blank"

@@ -19,6 +19,8 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(160deg, theme('colors.main-800'), theme('colors.main-900'));
+  scrollbar-gutter: stable;
+  scrollbar-color: #B7C2BB rgb(var(--background-rgb));
 }
 
 @layer utilities {
@@ -33,9 +35,4 @@ body {
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--background-rgb);
-}
-
-* {
-  scrollbar-gutter: stable;
-  scrollbar-color: #B7C2BB rgb(var(--background-rgb));
 }

@@ -13,58 +13,57 @@ const Sidebar = ({
         <div
             className={clsx(
                 {
-                    '  max-w-full justify-center px-4 pt-6 md:pt-16 lg:px-24 lg:pt-0':
+                    'items-center px-4 py-6 lg:w-1/3 lg:max-w-[28rem] lg:pt-0':
                         selectedPage,
-                    'w-full justify-center': !selectedPage, // TODO: fix width changing with bold
+                    'h-full items-center': !selectedPage, // TODO: fix width changing with bold
                 },
-                'bg-main-900 flex h-full flex-col transition-all duration-500 ease-out'
+                'bg-main-900 flex w-full flex-col justify-center transition-all  duration-500 ease-out lg:sticky lg:top-0 lg:h-full'
             )}
         >
-            <p
-                className={clsx(
-                    {
-                        'mb-2 text-2xl font-medium md:text-2xl lg:text-3xl':
-                            selectedPage,
-                        'relative left-1/4 mb-10 w-3/4  text-4xl md:text-5xl lg:text-6xl':
-                            !selectedPage,
-                    },
-                    'tracking-none  cursor-pointer font-bold leading-normal text-secondary-200'
-                )}
-            >
-                <span onClick={() => setPage('')}>Catherine Wu</span>
-            </p>
             <div
-                className={clsx(
-                    { ' relative left-1/4 w-3/4': !selectedPage },
-                    '  flex flex-col items-center space-x-2 md:flex-row  md:space-x-2 lg:space-x-4 '
-                )}
+                className={clsx({
+                    'flex flex-col lg:w-1/2': !selectedPage,
+                })}
             >
-                {/* <h3
+                <p
                     className={clsx(
                         {
-                            'text-xl md:text-xl lg:text-2xl': selectedPage,
-                            'text-4xl md:text-5xl lg:text-6xl': !selectedPage,
+                            'mb-2 text-2xl font-medium lg:text-3xl':
+                                selectedPage,
+                            'mb-10 text-4xl font-bold md:text-5xl lg:text-6xl':
+                                !selectedPage,
                         },
-                        'mr-0 py-2 font-extralight text-main-400 md:mr-0.5 lg:mr-1 '
+                        'tracking-none cursor-pointer leading-normal text-secondary-200 duration-500'
                     )}
                 >
-                    I am a{!selectedPage ? '...' : ' '}
-                </h3>{' '} */}
+                    <span onClick={() => setPage('')}>Catherine Wu</span>
+                </p>
+
                 {/* TODO: fix scrolling (just use js) */}
-                <div className="flex flex-col justify-center overflow-clip lg:h-48">
+                <div
+                    className={clsx(
+                        {
+                            'flex-col space-y-6': !selectedPage,
+                            // TODO: fix weird edge case below 472px
+                            'flex-row justify-between min-[472px]:w-[36rem] lg:w-full lg:flex-col lg:space-y-4':
+                                selectedPage,
+                        },
+                        'flex  lg:pt-6'
+                    )}
+                >
                     <h3
                         className={clsx(
                             {
-                                'font-regular text-white ':
+                                'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 'c',
-                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl ':
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
                                     selectedPage === 's' ||
                                     selectedPage === 'h',
 
-                                'font-light text-main-400 duration-100 hover:text-main-200 hover:drop-shadow-xl lg:mb-2  lg:text-4xl':
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
                                     !selectedPage,
                             },
-                            'relative cursor-pointer py-1 text-xl transition-all duration-200 ease-linear md:py-2 md:text-xl lg:text-2xl'
+                            'cursor-pointer text-xl transition-all duration-500 hover:duration-200 hover:ease-linear'
                         )}
                         onClick={() => {
                             setPage('c')
@@ -75,15 +74,15 @@ const Sidebar = ({
                     <h3
                         className={clsx(
                             {
-                                'font-regular text-white ':
+                                'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 's',
-                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl':
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
                                     selectedPage === 'h' ||
                                     selectedPage === 'c',
-                                'font-light text-main-400 duration-100 hover:text-main-200 hover:drop-shadow-xl lg:mb-2  lg:text-4xl':
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
                                     !selectedPage,
                             },
-                            'relative cursor-pointer py-1 text-xl transition-all duration-200 ease-linear md:py-2 md:text-xl lg:text-2xl'
+                            'cursor-pointer text-xl transition-all duration-500 hover:duration-200 hover:ease-linear '
                         )}
                         onClick={() => {
                             setPage('s')
@@ -94,15 +93,15 @@ const Sidebar = ({
                     <h3
                         className={clsx(
                             {
-                                'font-regular text-white ':
+                                'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 'h',
-                                'bg-clip-text  font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl ':
+                                'bg-clip-text  font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
                                     selectedPage === 'c' ||
                                     selectedPage === 's',
-                                'font-light text-main-400 duration-100 hover:text-main-200 hover:drop-shadow-xl lg:mb-2  lg:text-4xl':
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
                                     !selectedPage,
                             },
-                            'relative cursor-pointer py-1 text-xl transition-all duration-200 ease-linear md:py-2 md:text-xl lg:text-2xl'
+                            'cursor-pointer text-xl transition-all duration-500 hover:duration-200 hover:ease-linear '
                         )}
                         onClick={() => {
                             setPage('h')
