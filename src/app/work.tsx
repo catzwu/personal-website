@@ -4,7 +4,7 @@ import { workStuff } from './content'
 const Work = () => {
     return (
         <div className="animate-mount-component space-y-4">
-            <h1 className="mb-8 text-2xl font-bold leading-loose md:text-3xl lg:text-4xl">
+            <h1 className="mb-8 text-2xl font-semibold leading-loose md:text-3xl lg:text-4xl">
                 What I&apos;ve done
             </h1>
             <p className="font-light">

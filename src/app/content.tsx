@@ -24,7 +24,19 @@ export const workStuff: ProjectProps[] = [
 ]
 
 export const learningStuff = [
-    { name: 'test', description: 'description' },
+    {
+        name: 'Tech projects',
+        description:
+            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
+    },
+    {
+        name: 'Pencil and digital drawing',
+        description: <ArtDisplay folder={'art'} />,
+    },
+    {
+        name: 'Photography',
+        description: <ArtDisplay folder={'photo'} />,
+    },
     {
         name: '2023 reading list',
         description: (
@@ -49,19 +61,6 @@ export const learningStuff = [
                 </ul>
             </div>
         ),
-    },
-    {
-        name: 'Tech projects',
-        description:
-            'I am slowly learning how to be a full-stack developer/product engineer. I started with product. Moving down the stack, I learned the basics of design (highly recommend https://www.learnui.design/blog/). This website is all about learning CSS and getting familiar with Tailwind and animations. Next up is teammate hunt, where I will be leading a lot of the front-end work.',
-    },
-    {
-        name: 'Pencil and digital drawing',
-        description: <ArtDisplay folder={'art'} />,
-    },
-    {
-        name: 'Photography',
-        description: <ArtDisplay folder={'photo'} />,
     },
     {
         name: 'Quotes I strive to live by',

@@ -7,7 +7,7 @@ const Study = () => {
 
     return (
         <div className="animate-mount-component space-y-4">
-            <h1 className="mb-8 text-2xl font-bold leading-loose md:text-3xl lg:text-4xl">
+            <h1 className="mb-8 text-2xl font-semibold leading-loose md:text-3xl lg:text-4xl">
                 What I&apos;m learning
             </h1>
             <div className="block space-y-4 pb-12">
