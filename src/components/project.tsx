@@ -5,6 +5,7 @@ export type ProjectProps = {
     roles: string
     image: string
     description: string
+    long?: string
 }
 
 const Project: FC<ProjectProps> = ({ name, roles, image, description }) => {

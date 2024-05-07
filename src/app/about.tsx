@@ -16,7 +16,7 @@ const About = () => {
             </h1>
             <div className=" block space-y-4 font-light">
                 <img
-                    src="face.JPG"
+                    src="time.png"
                     className="float-right m-4 hidden w-1/4 rounded-lg md:flex"
                     alt="It's me!"
                 />

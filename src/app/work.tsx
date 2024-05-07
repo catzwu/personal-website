@@ -12,10 +12,10 @@ const Work = () => {
                 am obsessed with obsession, delight and agency.{' '}
             </p>
 
-            <div className="mb-8 space-y-8">
-                <h3 className="font-regular py-2 text-2xl leading-loose text-white lg:text-3xl">
+            <div className="my-8 space-y-8">
+                {/* <h3 className="font-regular py-2 text-2xl leading-loose text-white lg:text-3xl">
                     Selected work
-                </h3>
+                </h3> */}
                 {workStuff.map(({ name, roles, image, description }) => (
                     <Project
                         name={name}

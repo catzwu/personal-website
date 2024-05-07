@@ -8,11 +8,11 @@ const ArtDisplay = ({ folder }: { folder: string }) => {
     const imageList = images.keys().map((image) => images(image))
     console.log(imageList)
     return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
             {imageList.map((image, index) => (
                 <LazyLoadImage
                     key={index}
-                    className="h-32 w-32 object-cover"
+                    className="h-32 max-w-32 object-cover"
                     src={image.default.src}
                     alt={`image-${index}`}
                 />

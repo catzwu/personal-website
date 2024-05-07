@@ -27,6 +27,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .book-title {
+    font-style: italic;
+    color: theme('colors.secondary-200')
+  }
+
+  .link {
+    color: theme('colors.secondary-200');
+    text-decoration: underline;
+  }
+
+  .link:hover {
+    color: theme('colors.secondary-400')
+  }
 }
 
 *::-webkit-scrollbar {
