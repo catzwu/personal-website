@@ -178,7 +178,7 @@ export const learningStuff = [
                 <p>
                     See more of my photography, including higher-resolution
                     images,{' '}
-                    <Link href="/photography" className="link">
+                    <Link href="https://photos.catzwu.com/" className="link">
                         here
                     </Link>
                     .{' '}
