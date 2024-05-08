@@ -17,7 +17,7 @@ const About = () => {
             <div className=" block space-y-4 font-light">
                 <img
                     src="time.png"
-                    className="float-right m-4 hidden w-1/4 rounded-lg md:flex"
+                    className="float-right m-4 hidden w-1/4 rounded-full md:flex"
                     alt="It's me!"
                 />
                 {bio}
