@@ -16,7 +16,7 @@ export const workStuff: ProjectProps[] = [
         roles: 'Instructor, Admissions Committee',
         image: 'sparc.svg',
         description:
-            'Teaching everything I know to high school students, via intellectual play.',
+            'Teaching everything I know to high school students, via intellectual play. Also an instructor at ASPR.',
     },
     {
         name: 'Mystery Hunt 2023',
@@ -28,6 +28,10 @@ export const workStuff: ProjectProps[] = [
 ]
 
 export const learningStuff = [
+    {
+        name: 'Research',
+        description: <div className="space-y-2"></div>,
+    },
     {
         name: 'Tech stuff',
         description: (
@@ -81,9 +85,8 @@ export const learningStuff = [
                         </li>
                         <li>
                             ...and more. Teammate hunt continues! Our 2024 hunt
-                            isn&apos;t released yet, but I will be working on a
-                            lot of the frontend for the experience we are
-                            creating.
+                            was released in 2025, and I built much of the
+                            frontend for the main comic page.
                         </li>
                     </ul>
                 </p>
@@ -130,38 +133,6 @@ export const learningStuff = [
         ),
     },
     {
-        name: 'Languages',
-        description: (
-            <>
-                Languages I&apos;ve Duo&apos;ed:
-                <ul className="list-disc py-2 pl-5">
-                    <li>
-                        Japanese &mdash; Current, on and off since Summer 2016
-                    </li>
-                    <li>German &mdash; Winter 2021-2022</li>
-                    <li>Spanish &mdash; Summer 2015</li>
-                </ul>
-                I know a dabbling of Korean, Frenched in high school, and went
-                to Chinese school for 13 years. I am currently learning
-                Classical Chinese and working my way through HSK6.
-            </>
-        ),
-    },
-    {
-        name: 'Pencil and digital drawing',
-        description: (
-            <div className="space-y-2">
-                <p>
-                    I quit a sketching class in tears when I was nine,
-                    frustrated by all my imperfections. Nearly 20 years later, I
-                    have finally matured enough to try again. I find pencil (and
-                    eraser!) to be especially meditative.
-                </p>
-                <ArtDisplay folder={'art'} />
-            </div>
-        ),
-    },
-    {
         name: 'Photography',
         description: (
             <div className="space-y-2">
@@ -195,18 +166,48 @@ export const learningStuff = [
         name: 'Reading list',
         description: (
             <div className="">
-                <p className="">Some recent books I have learned a lot from</p>
+                <p className="">Some recent books I learned a lot from</p>
                 <ul className="list-disc py-2 pl-5">
-                    <li>
+                    {/* <li>
                         <span className="book-title">The Licanius Trilogy</span>
                         . Tropiest fantasy writing, but stellar multi-book
                         plotting.
+                    </li> */}
+                    <li>
+                        {/* 4/10/2025 */}
+                        <span className="book-title">
+                            Situational Awareness
+                        </span>
+                        , by Leopold Aschenbrenner. The publication that got me
+                        thinking about AI.
                     </li>
                     <li>
+                        {/* 4/10/2025 */}
+                        <span className="book-title">
+                            The Unaccountability Machine
+                        </span>
+                        by Dan Davies. Old ideas explaining new phenomena to a
+                        surprising depth.
+                    </li>
+                    <li>
+                        {/* 4/10/2025 */}
+                        <span className="book-title">
+                            The Structure of Scientific Revolutions
+                        </span>
+                        , by Thomas Kuhn. Solid meta-scientific framework.
+                    </li>
+                    {/* <li>
                         <i>
                             The Nine: Inside the Secret World of the Supreme
                             Court
                         </i>
+                    </li> */}
+                    <li>
+                        {/* 4/10/2025 */}
+                        <span className="book-title">
+                            Top-Down Democracy in South Korea
+                        </span>
+                        , by Erik Mobrand. Institutional inertia.
                     </li>
                     <li>
                         <i>The Price We Pay</i>, by Martin Makary
@@ -217,15 +218,39 @@ export const learningStuff = [
                         </span>
                         , by Gabrielle Zevin. A book about raw life.
                     </li>
-                    <li>
+                    {/* <li>
                         <i>The Scholomance</i> series, by Naomi Novik
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <span className="book-title">
                             Bullshit Jobs: A Theory
                         </span>
                         , by David Graeber. This book overpromises, but having
                         the vocabulary (and the shared cultural consciousness){' '}
+                    </li> */}
+                </ul>
+                <p className="pt-4">The classics</p>
+                <ul className="list-disc py-2 pl-5">
+                    <li>
+                        <span className="book-title">
+                            Thinking, Fast and Slow
+                        </span>
+                        , by Daniel Kahneman
+                    </li>
+                    <li>
+                        <span className="book-title">Gödel, Escher, Bach</span>,
+                        by Douglas Hofstadter
+                    </li>
+
+                    <li>
+                        <span className="book-title">
+                            The Design of Everyday Things
+                        </span>
+                        , by Don Norman
+                    </li>
+                    <li>
+                        <span className="book-title">The Selfish Gene</span>, by
+                        Richard Dawkins
                     </li>
                 </ul>
                 <p className="pt-4">The all-time favorites</p>
@@ -254,59 +279,78 @@ export const learningStuff = [
                     </li>
                     <li>
                         <span className="book-title">Exhalation</span>, by Ted
-                        Chiang
-                    </li>
-                </ul>
-                <p className="pt-4">The classics</p>
-                <ul className="list-disc py-2 pl-5">
-                    <li>
-                        <span className="italic">Thinking, Fast and Slow</span>,
-                        by Daniel Kahneman
-                    </li>
-                    <li>
-                        <span className="italic">Gödel, Escher, Bach</span>, by
-                        Douglas Hofstadter
-                    </li>
-
-                    <li>
-                        <span className="italic">
-                            The Design of Everyday Things
-                        </span>
-                        , by Don Norman
-                    </li>
-                    <li>
-                        <span className="italic">The Selfish Gene</span>, by
-                        Richard Dawkins
+                        Chiang. This man sees the beauty in science and in the
+                        world.
                     </li>
                 </ul>
             </div>
         ),
     },
     {
-        name: 'Fleeting thoughts, memorialized',
+        name: 'Languages',
         description: (
-            <ul>
-                <li>Be wise rather than clever.</li>
-                <li>
-                    Take everyone around you seriously, and yourself not at all.
-                </li>
-                <li>Everyone can be a friend.</li>
-                <li>Play to play vs play to win vs play to not lose.</li>
-            </ul>
+            <>
+                Languages I&apos;ve Duo&apos;ed:
+                <ul className="list-disc py-2 pl-5">
+                    <li>
+                        Japanese &mdash; Current, on and off since Summer 2016
+                    </li>
+                    <li>German &mdash; Winter 2021-2022</li>
+                    <li>Spanish &mdash; Summer 2015</li>
+                </ul>
+                I know a dabbling of Korean, Frenched in high school, and went
+                to Chinese school for 13 years. I am currently learning
+                Classical Chinese and working my way through HSK6.
+            </>
         ),
     },
+    {
+        name: 'Pencil and digital drawing',
+        description: (
+            <div className="space-y-2">
+                <p>
+                    I quit a sketching class in tears when I was nine,
+                    frustrated by all my imperfections. Nearly 20 years later, I
+                    have finally matured enough to try again. I find pencil (and
+                    eraser!) to be especially meditative.
+                </p>
+                <ArtDisplay folder={'art'} />
+            </div>
+        ),
+    },
+    // {
+    //     name: 'Fleeting thoughts, memorialized',
+    //     description: (
+    //         <ul>
+    //             <li>Be wise rather than clever.</li>
+    //             <li>
+    //                 Take everyone around you seriously, and yourself not at all.
+    //             </li>
+    //             <li>Everyone can be a friend.</li>
+    //             <li>Play to play vs play to win vs play to not lose.</li>
+    //         </ul>
+    //     ),
+    // },
 ]
 
 export const bio = (
     <>
         <p>
-            I&apos;m currently a graduate student who likes thinking about
-            coordination problems. The perfect mechanism can&apos;t solve
-            everything, but I believe we can get a long way towards
-            &lsquo;better&rsquo; by being intentional about incentives.
+            I am currently a PhD student who thinks about incentives and
+            coordination problems. Mechanism design is a strong yet fallible
+            technique for crafting outcomes more intentionally. Before we get
+            close to AI alignment, I believe we need to solve
+            &quot;institutional alignment&quot;.
         </p>
         <p>
-            I enjoy puzzles, design and learning new skills from the people
+            I see design as the grand theory that shapes the most interesting
+            problems around us. It is the reduction of variation, shaped by
+            values and aesthetics, that shapes the world around us. Everything
+            is a design problem; everything that is a design problem can be
+            interesting.
+        </p>
+        <p>
+            I enjoy puzzles, bouldering and learning new skills from the people
             around me.
         </p>
     </>
