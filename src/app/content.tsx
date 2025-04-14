@@ -4,6 +4,13 @@ import Link from 'next/link'
 
 export const workStuff: ProjectProps[] = [
     {
+        name: 'NYU Stern',
+        roles: 'PhD Student',
+        image: 'nyu.svg',
+        description: 'Studying the future of work with AI.',
+        long: 'My recent work is on the incentives of digital twins and how their creators balance productivity enhancement and replacement risk. I am also interested in how to design incentive-aligned institutional culture.',
+    },
+    {
         name: 'Shopify Data Platform',
         roles: 'Product Manager',
         image: 'shopify.svg',
@@ -28,10 +35,6 @@ export const workStuff: ProjectProps[] = [
 ]
 
 export const learningStuff = [
-    {
-        name: 'Research',
-        description: <div className="space-y-2"></div>,
-    },
     {
         name: 'Tech stuff',
         description: (
