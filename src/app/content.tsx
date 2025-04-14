@@ -386,16 +386,19 @@ export const bio = (
             of work. Academically, I am trained in economics and applied math.
             Professionally, I worked in product management and design.
             Intellectually, I believe all great problems are design problems; I
-            care most about incentives design. Like many others, I have recently
-            been bitten by the AI bug. Orienting AI successfully to help
-            humanity thrive will require immense foresight and care. In the
-            remainder of my free time, I enjoy puzzle hunts, bouldering and
-            learning new skills from the people around me.
+            care most about incentives design.
             {/* who thinks about incentives and
             coordination problems. Mechanism design is a strong yet fallible
             technique for crafting outcomes more intentionally. Before we get
             close to AI alignment, I believe we need to solve
             &quot;institutional alignment&quot;. */}
+        </p>
+        <p>
+            Like many others, I have recently been bitten by the AI bug.
+            Orienting AI successfully to help humanity thrive will require
+            immense foresight and care. In the remainder of my free time, I
+            enjoy puzzle hunts, bouldering and learning new skills from the
+            people around me.
         </p>
         {/* <p>
             I see design as the grand theory that shapes the most interesting
