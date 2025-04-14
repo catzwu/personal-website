@@ -7,7 +7,7 @@ export const workStuff: ProjectProps[] = [
         name: 'NYU Stern',
         roles: 'PhD Student',
         image: 'nyu.svg',
-        description: 'Studying the future of work with AI.',
+        description: 'Studying how AI is going to affect the future of work.',
         long: 'My recent work is on the incentives of digital twins and how their creators balance productivity enhancement and replacement risk. I am also interested in how to design incentive-aligned institutional culture.',
     },
     {
@@ -290,6 +290,49 @@ export const learningStuff = [
         ),
     },
     {
+        name: 'Productivity tools',
+        description: (
+            <>
+                My current setup:
+                <ul className="list-disc py-2 pl-5">
+                    <li>
+                        <span className="book-title">Obsidian</span> for
+                        read-later (via clipping and various shortcuts), weekly
+                        todos, journaling, shower thoughts.
+                    </li>
+                    <li>
+                        <span className="book-title">Zotero</span> for research
+                        seminars, individual projects, synthesizing academic
+                        notes.
+                    </li>
+                    <li>
+                        <span className="book-title">Mochi</span> for spaced
+                        repetition (the UI is much nicer than Anki&apos;s).
+                    </li>
+                    <li>
+                        <span className="book-title">VSCode</span> with Codeium
+                        for all development, R scripts, and LaTeX with custom
+                        snippets.
+                    </li>
+                    <li>
+                        <span className="book-title">Figma</span> for graphics
+                        and visual design.
+                    </li>
+                    <li>
+                        <span className="book-title">BetterTouchTools</span> and{' '}
+                        <span className="book-title">Karabiner</span>for custom
+                        keyboard tooling and window control.
+                    </li>
+                    <li>
+                        Miscellaneous: 1Password, Remarkable Tablet, Brave
+                        Browser.
+                    </li>
+                </ul>
+            </>
+        ),
+    },
+
+    {
         name: 'Languages',
         description: (
             <>
@@ -339,22 +382,29 @@ export const learningStuff = [
 export const bio = (
     <>
         <p>
-            I am currently a PhD student who thinks about incentives and
+            I am currently a PhD student studying how AI will impact the future
+            of work. Academically, I am trained in economics and applied math.
+            Professionally, I worked in product management and design.
+            Intellectually, I believe all great problems are design problems; I
+            care most about incentives design. Like many others, I have recently
+            been bitten by the AI bug. Orienting AI successfully to help
+            humanity thrive will require immense foresight and care. In the
+            remainder of my free time, I enjoy puzzle hunts, bouldering and
+            learning new skills from the people around me.
+            {/* who thinks about incentives and
             coordination problems. Mechanism design is a strong yet fallible
             technique for crafting outcomes more intentionally. Before we get
             close to AI alignment, I believe we need to solve
-            &quot;institutional alignment&quot;.
+            &quot;institutional alignment&quot;. */}
         </p>
-        <p>
+        {/* <p>
             I see design as the grand theory that shapes the most interesting
             problems around us. It is the reduction of variation, shaped by
             values and aesthetics, that shapes the world around us. Everything
             is a design problem; everything that is a design problem can be
             interesting.
-        </p>
-        <p>
-            I enjoy puzzles, bouldering and learning new skills from the people
-            around me.
-        </p>
+            I have recently been bitten by the AI bug, like many others. 
+        </p> */}
+        {/* <p></p> */}
     </>
 )
