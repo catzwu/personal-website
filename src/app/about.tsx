@@ -24,7 +24,7 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4 py-4 font-light text-secondary-200 *:rounded-lg *:border *:border-secondary-200 *:p-2 *:transition-colors hover:*:text-secondary-400 md:flex md:flex-row md:flex-wrap md:space-x-14 *:md:border-0 *:md:p-0">
                 <Link
-                    href="./cwu_resume_0124.pdf"
+                    href="./cwu_resume_1026.pdf"
                     target="_blank"
                     rel="noreferrer"
                 >
