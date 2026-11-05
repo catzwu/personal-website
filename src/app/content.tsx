@@ -2,13 +2,50 @@ import ArtDisplay from '@/components/artDisplay'
 import { ProjectProps } from '@/components/project'
 import Link from 'next/link'
 
+export const researchStuff = [
+    {
+        title: 'Incentives for AI Investment: Task-Based Productivity Enhancements with Generative AI',
+        status: 'Presented at Wharton AI Conference 2025, WISE 2025',
+        link: 'https://arxiv.org/abs/2509.08732',
+        description: 'We propose a new framework to situate the model in which the tasks performed vary in the ease to which AI output can be improved by the human (the "editability") and also vary in the extent to which a non-expert can assess the quality of output (its "verifiability.") During investment a strategic agent will trade off improvements in quality and ease of effort to preserve their wage bargaining power.',
+        date: '2025',
+    },
+    {
+        title: 'The Effect of Generative AI on Work Productivity: A Synthesis of the Early Literature',
+        status: 'Published in Learning Curves: Rethinking Education from Classrooms to Careers in an AI-Driven World, Wiley 2026',
+        link: 'https://www.wiley.com/en-us/shop/general-introductory-education/learning-curves-rethinking-education-from-classrooms-to-careers-in-an-ai-driven-world-p-9781394452477',
+        description: 'Book chapter synthesizing the early literature on the effect of generative AI on work productivity.',
+        date: '2026',
+    },
+    {
+        title: 'AI Replacement Risk Undermines Worker Effort',
+        status: 'Working paper, presented at SCECR 2025',
+        description: "We examine the tension present in a worker's decision to produce training data to improve AI models that may substitute for the worker down the line. Under threat of replacement, workers are 7% less likely to provide any training data, and annotate 20% less data among those who train at all.",
+        date: '2026',
+    },
+    {
+        title: 'Estimating AI Augmentation Across Occupations',
+        status: 'Working paper, to be presented at Temple AIML, WISE 2026',
+        description: 'We develop occupation-level estimates of AI augmentation by combining a meta-review of recent human-plus-AI experiments with the activity structure of occupations in O*NET, and by using graph-based semi-supervised learning to propagate the experimental evidence through the occupation–activity network.',
+        date: '2026',
+    },
+    {
+        title: 'The Boiling Frog? Training Data Markets and the Value of Human Capital',
+        status: 'Working paper',
+        description: 'We build a model of a competitive labor market where workers may decide to sell their labor to a productive firm or to an AI training firm, thereby improving the AI. Even when high-skilled workers may stand to lose more from training the AI system alone, the persistent progress of AI from low-skilled training may threaten their wages enough to incentivize training.',
+        date: '2026',
+    }
+
+
+]
+
 export const workStuff: ProjectProps[] = [
     {
         name: 'NYU Stern',
         roles: 'PhD Student',
         image: 'nyu.svg',
         description: 'Studying how AI is going to affect the future of work.',
-        long: 'My recent work is on the incentives of digital twins and how their creators balance productivity enhancement and replacement risk. I am also interested in how to design incentive-aligned institutional culture.',
+        long: 'My recent work is on labor, the incentives of training AI and the broken career ladder.',
     },
     {
         name: 'Shopify Data Platform',
@@ -23,7 +60,7 @@ export const workStuff: ProjectProps[] = [
         roles: 'Instructor, Admissions Committee',
         image: 'sparc.svg',
         description:
-            'Teaching everything I know to high school students, via intellectual play. Also an instructor at ASPR.',
+            'Teaching everything I know to high school students, via intellectual play. Also an instructor at ASPR and PAIR.',
     },
     {
         name: 'Mystery Hunt 2023',
@@ -36,7 +73,7 @@ export const workStuff: ProjectProps[] = [
 
 export const learningStuff = [
     {
-        name: 'Tech stuff',
+        name: 'Tech stack',
         description: (
             <div className="space-y-2">
                 <h3 className=" text-xl">Personal website</h3>
@@ -256,13 +293,13 @@ export const learningStuff = [
                         Richard Dawkins
                     </li>
                 </ul>
-                <p className="pt-4">The all-time favorites</p>
+                <p className="pt-4">Just for fun</p>
                 <ul className="list-disc py-2 pl-5">
                     <li>
                         <span className="book-title">
                             The Queen&apos;s Thief
                         </span>{' '}
-                        series, by Megan Whalen Turner. The OG, Eugenides was my
+                        series, by Megan Whalen Turner. Eugenides was my
                         childhood hero.
                     </li>
                     <li>

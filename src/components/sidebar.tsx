@@ -55,8 +55,30 @@ const Sidebar = ({
                         className={clsx(
                             {
                                 'font-regular text-white md:text-xl lg:text-2xl':
+                                    selectedPage === 'r',
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
+                                    selectedPage === 's' ||
+                                    selectedPage === 'h' ||
+                                    selectedPage === 'c',
+
+                                'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
+                                    !selectedPage,
+                            },
+                            'cursor-pointer text-xl transition-all duration-500 hover:duration-200 hover:ease-linear'
+                        )}
+                        onClick={() => {
+                            setPage('r')
+                        }}
+                    >
+                        Research
+                    </h3>
+                    <h3
+                        className={clsx(
+                            {
+                                'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 'c',
                                 'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
+                                    selectedPage === 'r' ||
                                     selectedPage === 's' ||
                                     selectedPage === 'h',
 
@@ -69,7 +91,7 @@ const Sidebar = ({
                             setPage('c')
                         }}
                     >
-                        creator of experiences
+                        What I&apos;ve done
                     </h3>
                     <h3
                         className={clsx(
@@ -77,6 +99,7 @@ const Sidebar = ({
                                 'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 's',
                                 'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
+                                    selectedPage === 'r' ||
                                     selectedPage === 'h' ||
                                     selectedPage === 'c',
                                 'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
@@ -88,7 +111,7 @@ const Sidebar = ({
                             setPage('s')
                         }}
                     >
-                        perpetual student
+                        What I&apos;m learning
                     </h3>
                     <h3
                         className={clsx(
@@ -96,6 +119,7 @@ const Sidebar = ({
                                 'font-regular text-white md:text-xl lg:text-2xl':
                                     selectedPage === 'h',
                                 'bg-clip-text  font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-xl lg:text-2xl':
+                                    selectedPage === 'r' ||
                                     selectedPage === 'c' ||
                                     selectedPage === 's',
                                 'font-light text-main-400 hover:text-main-200 hover:drop-shadow-xl md:text-3xl lg:text-4xl':
@@ -107,7 +131,7 @@ const Sidebar = ({
                             setPage('h')
                         }}
                     >
-                        human
+                        Who I am
                     </h3>
                 </div>
             </div>

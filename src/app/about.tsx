@@ -11,14 +11,13 @@ const About = () => {
 
     return (
         <div className="animate-mount-component space-y-4">
-            <h1 className="mb-8 text-2xl font-semibold leading-loose md:text-3xl lg:text-4xl">
+            {/* <h1 className="mb-8 text-2xl font-semibold leading-loose md:text-3xl lg:text-4xl">
                 Who I am
-            </h1>
-            <div className=" block space-y-4 font-light">
+            </h1> */}
+            <div className=" block space-y-4 font-light mt-4">
                 <img
                     src="bnw_face.png"
-                    className="float-right m-4 hidden w-1/4 rounded-full md:flex"
-                    alt="It's me!"
+                    className="float-right m-4 flex w-1/4 rounded-full "
                 />
                 {bio}
             </div>
